@@ -129,7 +129,7 @@ void loop() {
     while (bikeSpeed > 110) {
       bikeSpeed = 110;  //Setting max speed 110 KM/H
     }
-    float safeAngle = (70 - (0.636 * bikeSpeed));
+    float safeAngle = (55*(1 - (bikeSpeed/110)));
     //Converting integer value Char*
     char printableSafeangle[10];
     char printableBikespeed[10];
